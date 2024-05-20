@@ -1,0 +1,76 @@
+@import url("https://fonts.googleapis.com/css2?family=Arvo:ital,wght@0,400;0,700;1,400;1,700&display=swap");
+
+:root {
+  --cor-de-fundo: #283149;
+  --cor-de-fundo2: #ffffff; /* Corrigido para ter um valor válido */
+  --fonte-principal: "Arvo", serif;
+  --branco: #dbedf3;
+  --vermelho: #da0463;
+  --cinza: #404b69;
+  --cinza-claro: #dbedf3;
+}
+
+body {
+  text-align: center;
+  background-color: var(--cor-de-fundo);
+  font-family: var(
+    --fonte-principal
+  ); /* Adicionado para aplicar a fonte em todo o corpo */
+}
+
+h1 {
+  font-size: 5rem;
+  color: var(--branco);
+  text-shadow: 3px 0 var(--vermelho);
+}
+
+.set {
+  margin: 10% auto;
+}
+
+.drum {
+  outline: none;
+  border: 10px solid var(--cinza);
+  font-size: 5rem;
+  line-height: 2;
+  font-weight: 900;
+  color: var(--vermelho);
+  text-shadow: 3px 0 var(--cinza-claro);
+  border-radius: 15px;
+  display: inline-block;
+  width: 150px;
+  height: 150px;
+  text-align: center;
+  margin: 10px;
+  background-color: var(--branco);
+  background-size: cover; /* Adicionado para garantir que as imagens de fundo cubram o botão */
+  cursor: pointer; /* Adicionado para mudar o cursor quando passar sobre os botões */
+}
+
+.a {
+  background-image: url("./assets/images/crash.png");
+}
+.s {
+  background-image: url("./assets/images/tom1.png");
+}
+.d {
+  background-image: url("./assets/images/snare.png");
+}
+.j {
+  background-image: url("./assets/images/tom3.png");
+}
+.k {
+  background-image: url("./assets/images/tom2.png");
+}
+.l {
+  background-image: url("./assets/images/kickbass.png");
+}
+
+footer {
+  color: var(--cinza-claro);
+}
+
+.pressed {
+  box-shadow: 0 3px 4px 0 var(--cinza-claro);
+  transform: scale(0.98); /* Adicionado para dar um efeito de pressionado */
+}
